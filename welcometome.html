@@ -7,14 +7,12 @@
   body{
   	background-color:rgb(256,227,105);
     }
-@fontface { font-family:fancy;
-	src: Darleston.otf; }
 </style>
 </head>
 
 <!--so that thing above makes the body yellow and down there where I want the strip of a different color yelow so you can slick to different pages i cant shange that color how sad--> 
 
-<h1 style="font-size:500%;text-align:center;font-fmaily:fancy;">Welcome to Me! </h1>
+<h1 style="font-size:500%;text-align:center;">Welcome to Me! </h1>
 <h1 style="font-size:190%;text-align:center;">Patrice Cheung</h1>
 
 <head>
@@ -45,21 +43,67 @@ li a{
     text-decoration: none;
 }
 li a:hover:not(.active) {
-	background-color: white;
+	background-color: rgb(246,160,194);
 }
 
 .active {
 	background-color:white;
 }
+li a, .dropbtn {
+    display: inline-block;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgb(246,160,194)}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 </style>
 </head>
 <ul>
     <li><a href="#gwc">GWC</a><li>
-    <li><a href="#passion">Passions</a><li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="passions">Passions</a>
+    <div class="dropdown-content">
+      <a href="#">Photography</a>
+      <a href="#">Environment</a>
+      <a href="#">Books</a>
+    </div>
+  </li>
     <li><a href="#dis/likes">Dis/Likes</a></li>
     <li style="float:left"><a href="#home">Home</a> </li>
    
 </ul>
+
 <body>
 
 <p> Hello! My name is Patrice and I am currently a junior at Castro Valley High School.</p>
@@ -77,3 +121,5 @@ li a:hover:not(.active) {
 <!--<h1 style="font-size:500%;text-align:center;">Welcome to Me!<br style="font-size:190%;text-align:center;"> Patrice Cheung</h1>-->
 
 <!--dafont.com to download some cool font stuff  -->
+<!--@fontface { font-family:fancy;
+	src: Darleston.otf; }-->
