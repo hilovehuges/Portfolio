@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <title>Patrice <3</title>
+  
+  <head>
+  <style>
+  body{
+  	background-color:rgb(256,227,105);
+    }
+</style>
+</head>
+
+<!--so that thing above makes the body yellow and down there where I want the strip of a different color yelow so you can slick to different pages i cant shange that color how sad--> 
+
+<h1 style="font-size:500%;text-align:center;height:50px;">Welcome to Me! </h1>
+<h1 style="font-size:190%;text-align:center;">Patrice Cheung</h1>
+
+<head>
+<style>
+
+ul {
+	list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: rgb(215,244,255);
+}
+li{
+	float: right;
+    border-left:1px solid #bbb;
+}
+
+li:last-child {
+    border-left: none;
+    border-right:1px solid #bbb;
+}
+
+li a{
+	display:block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+	background-color: white;
+}
+
+.active {
+	background-color:white;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #f6a0c2;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgb(246,160,194)}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<ul>
+    <li><a href="#gwc">GWC</a><li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="passions">Passions</a>
+    <div class="dropdown-content">
+      <a href="#">Photography</a>
+      <a href="#">Environment</a>
+      <a href="#">Books</a>
+    </div>
+  </li>
+    <li><a href="#dis/likes">Dis/Likes</a></li>
+    <li style="float:left"><a href="#home">Home</a> </li>
+   
+</ul>
